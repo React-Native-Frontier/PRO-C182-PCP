@@ -8,7 +8,7 @@ const Filter1 = ({
 		},
 		LEFT_EYE,
 		RIGHT_EYE,
-		noseBasePosition,
+		NOSE_BASE,
 	},
 }) => {
 	const filterWidth = faceWidth * 3.5;
@@ -24,7 +24,7 @@ const Filter1 = ({
 				position: 'absolute',
 				left: LEFT_EYE.x - filterWidth * 0.46,
 				right: RIGHT_EYE.x - filterWidth * 0.15,
-				top: noseBasePosition.y - filterHeight * 1.5,
+				top: NOSE_BASE.y - filterHeight * 1.5,
 			}}>
 			<Image
 				source={require('../assets/crown-pic1.png')}
